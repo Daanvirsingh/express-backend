@@ -42,7 +42,7 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
     $('#alert').hide()
     $.ajax({
         type: "POST",
-        url: host+"post",
+        url: host+"signup",
         data: formData,
         contentType : "application/json"
       }).done(function(res){
